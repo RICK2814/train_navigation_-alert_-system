@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Safety System Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>🚆 Train Safety System</h1>
+            <div class="alerts">
+                <span id="alert-badge" class="badge hidden">0 Active Alerts</span>
+                <button id="notifications-btn">🔔 Notifications</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="active-alerts" class="hidden">
+            <h2>Active Alerts</h2>
+            <div id="alerts-container"></div>
+        </section>
+
+        <section class="grid">
+            <div class="card">
+                <h3>🚨 Smoke Detection</h3>
+                <p id="smoke-status">Normal</p>
+            </div>
+            <div class="card">
+                <h3>🛑 Braking System</h3>
+                <p id="braking-status">Active</p>
+            </div>
+            <div class="card">
+                <h3>📍 GPS Tracking</h3>
+                <p id="gps-status">Connected</p>
+            </div>
+            <div class="card">
+                <h3>🚧 Obstacle Detection</h3>
+                <p id="obstacle-status">Clear</p>
+            </div>
+        </section>
+
+        <nav class="tabs">
+            <button class="tab" data-tab="overview">Overview</button>
+            <button class="tab" data-tab="smoke">Smoke Detection</button>
+            <button class="tab" data-tab="alerts">Alert System</button>
+            <button class="tab" data-tab="braking">Braking System</button>
+            <button class="tab" data-tab="gps">GPS Tracking</button>
+            <button class="tab" data-tab="obstacles">Obstacle Detection</button>
+        </nav>
+
+        <section id="tab-content">
+            <p>Select a tab to view details.</p>
+        </section>
+    </main>
+</body>
+</html>
